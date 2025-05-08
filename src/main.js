@@ -1,6 +1,6 @@
 import { createClient } from "@supabase/supabase-js";
 import * as emailjs from '@emailjs/browser';
-import './styles/tailwind.css';
+import './tailwind.css';
 
 const SUPABASE_URL = "https://uzhdlfqtajjjbywjctfu.supabase.co";
 const SUPABASE_API_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV6aGRsZnF0YWpqamJ5d2pjdGZ1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDY1ODc4NjksImV4cCI6MjA2MjE2Mzg2OX0.OoAIVMuQRsWdR17gRc-dD8ueiCGy3vtVZ1AO5tKJiOk";
