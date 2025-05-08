@@ -73,7 +73,24 @@ document.addEventListener('submit', async function(e){
         btn.disabled= false;
         btnText.classList.remove('hidden');
         btnSpinner.classList.add('hidden');
-    }
 
+        // Show thank you overlay
+        const overlay = document.getElementById('thankYouOverlay');
 
+       // Show overlay with fade-in
+    overlay.classList.remove('opacity-0', 'pointer-events-none');
+    overlay.classList.add('opacity-100');
+
+    // Hide after 3 seconds with fade-out
+    setTimeout(() => {
+        overlay.classList.remove('opacity-100');
+        overlay.classList.add('opacity-0');
+
+        // After fade-out transition ends, make it non-interactive again
+        setTimeout(() => {
+        overlay.classList.add('pointer-events-none');
+        }, 500); // match the CSS transition duration
+    }, 2000);
+
+    } 
 });
