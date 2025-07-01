@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="module" crossorigin src="./assets/index-BNETumxe.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-BLOeROBM.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header id="header" class="fixed w-full top-0 left-0 z-50 transition-all duration-500 bg-transparent">
+    <div class="container mx-auto flex items-center justify-between px-4 py-3">
+      <div></div>
+
+      <!-- Desktop Menu -->
+      <nav id="navbar" class="hidden md:flex md:space-x-7 md:font-semibold ">
+        <a href="#hero" class="nav-link md:text-white hover:text-blue-700 transition-all duration-100 ">Home</a>
+        <a href="#about" class="nav-link md:text-white hover:text-blue-700 transition-all duration-100">About</a>
+        <a href="#skills" class="nav-link md:text-white hover:text-blue-700 transition-all duration-100">Skills</a>
+        <a href="#projects" class="nav-link md:text-white hover:text-blue-700 transition-all duration-100">Projects</a>
+        <a href="#services" class="nav-link md:text-white hover:text-blue-700 transition-all duration-100">Services</a>
+        <a href="#testimonials"
+          class="nav-link md:text-white hover:text-blue-700 transition-all duration-100">Testimonials</a>
+        <a href="#contact" class="nav-link md:text-white hover:text-blue-700 transition-all duration-100">Contact</a>
+      </nav>
+
+      <!-- Mobile Button -->
+      <div class="md:hidden flex items-center">
+        <button id="menu-toggle" class="text-3xl inline text-white focus:outline-none transition-all">
+          &#9776;
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="menu" class="hidden md:hidden bg-black px-4 pt-4 pb-6 space-y-4 transition-all duration-500">
+      <a href="#hero" class="nav-link-mobile text-white block">Home</a>
+      <a href="#about" class="nav-link-mobile text-white block">About</a>
+      <a href="#skills" class="nav-link-mobile text-white block">Skills</a>
+      <a href="#projects" class="nav-link-mobile text-white block">Projects</a>
+      <a href="#services" class="nav-link-mobile text-white block">Services</a>
+      <a href="#testimonials" class="nav-link-mobile text-white block">Testimonials</a>
+      <a href="#contact" class="nav-link-mobile text-white block">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="bg-cover bg-center min-h-screen flex text-white font-serif pt-21"
+    style="background-image: url('./assets/Background-ltDE3MgI.jpg');">
+    <div class="container px-6 flex flex-col md:flex-row  items-start md:items-center  justify-start  min-h-[calc(100vh-6rem)]
+                lg:pl-32">
+      <div class="md:w-1/2 flex flex-col  gap-5 ml-12 my-11 
+                  md:mt-0 md:p-0 items-start md:min-h-full justify-center">
+        <h1 class="text-4xl  font-bold leading-tight  mt-10 md:mb-12 mb-20 md:text-6xl">Devendhra A</h1>
+        <h2 class="text-2xl md:text-3xl mb-2 mt-12 md:mt-9">Full Stack Developer</h2>
+        <p class="text-lg md:text-xl mb-8">I build beautiful and functional websites that bring ideas to life.</p>
+        <div class="flex space-x-4 justify-start flex-wrap gap-7">
+          <a href="#contact"
+            class="bg-white text-blue-600 
+                                    hover:bg-transparent hover:text-white font-bold
+                                    py-3 px-6 md:ml-0 ml-9 rounded-lg transition-all duration-300  hover:scale-105">Hire Me</a>
+          <a href="/Devendhra.pdf" target="_blank" class="bg-transparent 
+                                               hover:bg-white hover:text-blue-600 border  border-white font-bold 
+                                                py-3 px-6 ml-6 mr-0 rounded-lg transition-all duration-500">View
+            Resume</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="py-20 bg-white bg-cover bg-center text-gray-800 min-h-screen"
+    style="background-image: url('./assets/About-background-BfZJPAo8.jpg');">
+    <div class="container md:mt-20 mx-auto px-6 flex flex-col md:flex-row items-center gap-10">
+      <div class="md:w-1/2 flex justify-center mb-8 md:mb-0">
+        <img src="./assets/image-BC7YZ4ZD.png" alt="Professional headshot"
+          class="rounded-full h-80 w-80 object-cover object-top border-4 border-white shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.8)]">
+      </div>
+      <div class="text-white font-bold bg-black bg-opacity-50 rounded-xl p-8 md:w-1/2 text-center md:text-left">
+        <h2 class="text-4xl font-bold mb-4 text-indigo-600">About Me</h2>
+        <p class="text-lg leading-relaxed mb-4">
+          Hi! I'm Devendha A, a passionate Full Stack Developer who loves turning ideas into beautiful web experiences.
+          I'm currently diving deep into modern technologies like Tailwind CSS, React, and Next.js.
+        </p>
+        <p class="text-lg leading-relaxed">
+          I enjoy learning new frameworks and building real-world projects. Let's create something amazing together!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 md:py-22 md:h-screen bg-cover bg-center"
+    style="background-image: url('./assets/Skill-Background-DyW-3xK-.jpg');">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl text-white font-bold text-center mb-12">Skills</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+        <div
+          class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center hover:scale-105 transition  duration-300">
+          <i class="fab fa-html5 text-5xl text-orange-500 mb-4"></i>
+          <h3 class="text-xl font-semibold">HTML</h3>
+          <p class="text-gray-600 text-center mt-2">Semantic markup and accessibility best practices</p>
+        </div>
+        <div
+          class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center hover:scale-105 transition duration-300">
+          <i class="fab fa-css3-alt text-5xl text-blue-500 mb-4"></i>
+          <h3 class="text-xl font-semibold">CSS</h3>
+          <p class="text-gray-600 text-center mt-2">Responsive layouts and animations</p>
+        </div>
+        <div
+          class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center hover:scale-105 transition duration-300">
+          <i class="fab fa-js text-5xl text-yellow-500 mb-4"></i>
+          <h3 class="text-xl font-semibold">JavaScript</h3>
+          <p class="text-gray-600 text-center mt-2">ES6+, DOM manipulation, and async programming</p>
+        </div>
+        <div
+          class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center hover:scale-105 transition duration-300">
+          <i class="fab fa-css3 text-5xl text-teal-500 mb-4"></i>
+          <h3 class="text-xl font-semibold">Tailwind CSS</h3>
+          <p class="text-gray-600 text-center mt-2">Utility-first CSS framework</p>
+        </div>
+        <div
+          class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center hover:scale-105 transition duration-300">
+          <i class="fab fa-react text-5xl text-blue-400 mb-4"></i>
+          <h3 class="text-xl font-semibold">React</h3>
+          <p class="text-gray-600 text-center mt-2">Component-based UI development</p>
+        </div>
+        <div
+          class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center hover:scale-105 transition duration-300">
+          <i class="fab fa-git-alt text-5xl text-red-500 mb-4"></i>
+          <h3 class="text-xl font-semibold">Git</h3>
+          <p class="text-gray-600 text-center mt-2">Version control and collaborative workflows</p>
+        </div>
+        <div
+          class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center hover:scale-105 transition duration-300">
+          <i class="fab fa-figma text-5xl text-purple-500 mb-4"></i>
+          <h3 class="text-xl font-semibold">Figma</h3>
+          <p class="text-gray-600 text-center mt-2">UI/UX design and prototyping</p>
+        </div>
+        <div
+          class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center hover:scale-105 transition duration-300">
+          <i class="fas fa-mobile-alt text-5xl text-gray-700 mb-4"></i>
+          <h3 class="text-xl font-semibold">Responsive Design</h3>
+          <p class="text-gray-600 text-center mt-2">Mobile-first approach</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 bg-white bg-cover bg-center"
+    style="background-image: url(./assets/Skill-Background-DyW-3xK-.jpg);">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl text-white font-bold text-center mb-12">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Project 1: Salesforce Landing Page Clone -->
+        <div
+          class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+            <div class="relative h-64 overflow-hidden">
+              <img src="./assets/salesforce-45rFdwRx.png" alt="Portfolio Project"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              </div>
+            </div>
+            <div class="p-6 bg-white">
+              <h3 class="text-xl font-bold mb-2">Salesforce Landing Page Clone</h3>
+              <p class="text-gray-600 mb-4">Responsive landing page built using HTML, Tailwind CSS, and JavaScript,
+                replicating Salesforce’s modern UI with mobile-friendly layout and interactive design.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded-full">Html</span>
+                <span class="px-2 py-1 bg-green-100 text-green-700 text-xs rounded-full">Tailwind CSS</span>
+                <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">Utility-first</span>
+              </div>
+              <div class="flex justify-between mt-4">
+                <a href="https://github.com/devendhra/Salesforceclone-html-tailwindcss.git"
+                  class="flex items-center text-gray-600 hover:text-blue-600 transition-colors">
+                  <i class="fab fa-github mr-2"></i> Source Code
+                </a>
+                <a href="https://salesforcecloneapp.netlify.app/"
+                  class="flex items-center px-3 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors">
+                  <i class="fas fa-external-link-alt mr-2"></i> Live Preview
+                </a>
+              </div>
+            </div>
+        </div>
+
+        <!-- Project 2: To-Do App -->
+        <div
+          class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+          <div class="relative h-64 overflow-hidden">
+            <img src="./assets/todo-kZYSFK9L.png" alt="Portfolio Project"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            </div>
+          </div>
+          <div class="p-6 bg-white">
+            <h3 class="text-xl font-bold mb-2">To-Do App</h3>
+            <p class="text-gray-600 mb-4">A simple and intuitive To-Do application using HTML, CSS, and JavaScript,
+              enabling task creation, completion tracking, and real-time updates with a clean UI.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded-full">Html</span>
+              <span class="px-2 py-1 bg-green-100 text-green-700 text-xs rounded-full">Tailwind CSS</span>
+              <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">API for AI</span>
+            </div>
+            <div class="flex justify-between mt-4">
+              <a href="https://github.com/devendhra/to-do-app.git"
+                class="flex items-center text-gray-600 hover:text-blue-600 transition-colors">
+                <i class="fab fa-github mr-2"></i> Source Code
+              </a>
+              <a href="https://devendhrastodoapp.netlify.app/"
+                class="flex items-center px-3 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors">
+                <i class="fas fa-external-link-alt mr-2"></i> Live Preview
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Typing Speed Test -->
+        <div
+          class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+          <div class="relative h-64 overflow-hidden">
+            <img src="./assets/typing-go2p69bo.png" alt="Portfolio Project"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            </div>
+          </div>
+          <div class="p-6 bg-white">
+            <h3 class="text-xl font-bold mb-2">Typing Speed Test</h3>
+            <p class="text-gray-600 mb-4">Functional typing speed test web app built with HTML, Tailwind CSS, and
+              JavaScript, featuring real-time WPM tracking, countdown timer, and dynamic word generation.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded-full">Html</span>
+              <span class="px-2 py-1 bg-green-100 text-green-700 text-xs rounded-full">Tailwind CSS</span>
+              <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">Hook API</span>
+            </div>
+            <div class="flex justify-between mt-4">
+              <a href="https://github.com/devendhra/Typingtest.git"
+                class="flex items-center text-gray-600 hover:text-blue-600 transition-colors">
+                <i class="fab fa-github mr-2"></i> Source Code
+              </a>
+              <a href="https://10typingtest.netlify.app/"
+                class="flex items-center px-3 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors">
+                <i class="fas fa-external-link-alt mr-2"></i> Live Preview
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Portfolio -->
+        <div
+          class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+          <div class="relative h-64 overflow-hidden">
+            <img src="./assets/portfolio-DAtasfts.png" alt="Portfolio Project"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            </div>
+          </div>
+          <div class="p-6 bg-white">
+            <h3 class="text-xl font-bold mb-2">Portfolio Website</h3>
+            <p class="text-gray-600 mb-4">Dynamic portfolio website built with React.js and Next.js featuring responsive
+              design and smooth animations.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded-full">React.js</span>
+              <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">Next.js</span>
+              <span class="px-2 py-1 bg-green-100 text-green-700 text-xs rounded-full">Tailwind CSS</span>
+            </div>
+            <div class="flex justify-between mt-4">
+              <a href="https://github.com/devendhra/portfolio-1"
+                class="flex items-center text-gray-600 hover:text-blue-600 transition-colors">
+                <i class="fab fa-github mr-2"></i> Source Code
+              </a>
+              <a href="https://680a661afebd6f11a5db1fde--devendhraportfolio.netlify.app/"
+                class="flex items-center px-3 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors">
+                <i class="fas fa-external-link-alt mr-2"></i> Live Preview
+              </a>
+            </div>
+          </div>
+          <div
+            class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold shadow-md">
+            Featured
+          </div>
+        </div>
+
+        <!-- Project 5: Weather Tracker -->
+        <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+
+          <div class="relative h-64 overflow-hidden">
+            <div class="absolute  from-blue-400 to-indigo-600 opacity-90"></div>
+            <img src="./assets/weather-h5--xHL0.png" alt="Weather App"
+              class="w-full h-full object-cover  transition-transform duration-500 group-hover:scale-110">
+            <div
+              class="absolute inset-0 flex flex-col justify-center items-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-indigo-800/80">
+              <h3 class="text-xl font-bold text-white mb-2">Skywatcher's Companion</h3>
+              <p class="text-white text-center mb-4">Real-time weather forecasting app with hourly updates, location
+                tracking, and detailed weather metrics.</p>
+
+
+              <div class="flex space-x-4">
+                <a href="https://github.com/devendhra/Weather-App"
+                  class="px-4 py-2 bg-white text-indigo-600 rounded hover:bg-indigo-100 transition-colors flex items-center">
+                  <i class="fab fa-github mr-2"></i> Source Code
+                </a>
+                <a href="https://skywatcherscompanion.netlify.app/"
+                  class="px-4 py-2 bg-indigo-500 text-white rounded hover:bg-indigo-600 transition-colors flex items-center">
+                  <i class="fas fa-external-link-alt mr-2"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Visible Content (For Mobile/When Not Hovered) -->
+          <div class="p-6 bg-white md:group-hover:opacity-100 transition-opacity duration-300">
+            <h3 class="text-xl font-bold mb-2">Skywatcher's Companion</h3>
+            <p class="text-gray-600 mb-4">Real-time weather forecasting app using React.js, Tailwind CSS, and the Rapid
+              API.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded-full">React.js</span>
+              <span class="px-2 py-1 bg-green-100 text-green-700 text-xs rounded-full">Tailwind CSS</span>
+              <span class="px-2 py-1 bg-red-100 text-red-700 text-xs rounded-full">Rapid API</span>
+            </div>
+            <div class="flex justify-between mt-4">
+              <a href="https://github.com/devendhra/Weather-App"
+                class="flex items-center text-gray-600 hover:text-blue-600 transition-colors">
+                <i class="fab fa-github mr-2"></i> Source Code
+              </a>
+              <a href="https://skywatcherscompanion.netlify.app/"
+                class="flex items-center px-3 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors">
+                <i class="fas fa-external-link-alt mr-2"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: Todo List -->
+        <div
+          class="group relative overflow-hidden rounded-lg shadow-lg bg-white hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+          <div class="relative h-64 overflow-hidden bg-gradient-to-r from-amber-400 to-orange-500">
+            <div
+              class="absolute inset-0 flex flex-col items-center justify-center opacity-70 group-hover:opacity-40 transition-opacity duration-300">
+              <div class="w-3/4 bg-white/90 rounded shadow-sm p-2 transform -rotate-3 mb-3">
+                <div class="flex items-center">
+                  <div class="w-4 h-4 rounded-full bg-green-500 mr-2"></div>
+                  <div class="h-2 bg-gray-300 rounded w-3/4"></div>
+                </div>
+              </div>
+              <div class="w-3/4 bg-white/90 rounded shadow-sm p-2 transform rotate-1 mb-3">
+                <div class="flex items-center">
+                  <div class="w-4 h-4 rounded-full bg-green-500 mr-2"></div>
+                  <div class="h-2 bg-gray-300 rounded w-1/2"></div>
+                </div>
+              </div>
+              <div class="w-3/4 bg-white/90 rounded shadow-sm p-2 transform -rotate-2">
+                <div class="flex items-center">
+                  <div class="w-4 h-4 rounded-full border border-gray-400 mr-2"></div>
+                  <div class="h-2 bg-gray-300 rounded w-2/3"></div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="absolute inset-0 bg-orange-700/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div class="text-center p-4">
+                <h4 class="text-white font-bold mb-2">Features:</h4>
+                <ul class="text-white text-sm space-y-1 mb-4">
+                  <li>✓ Task creation and deletion</li>
+                  <li>✓ Priority levels</li>
+                  <li>✓ Task categories</li>
+                  <li>✓ Local storage persistence</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Task Manager</h3>
+            <p class="text-gray-600 mb-4">Todo list application with task prioritization, categories, and local storage
+              persistence developed using React.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded-full">React.js</span>
+              <span class="px-2 py-1 bg-orange-100 text-orange-700 text-xs rounded-full">Context API</span>
+              <span class="px-2 py-1 bg-purple-100 text-purple-700 text-xs rounded-full">CSS-in-JS</span>
+            </div>
+            <div class="flex justify-between mt-4">
+              <a href="https://github.com/devendhra/TaskManager"
+                class="flex items-center text-gray-600 hover:text-orange-600 transition-colors">
+                <i class="fab fa-github mr-2"></i> Source Code
+              </a>
+              <a href="https://taskmanagingweb.netlify.app/"
+                class="flex items-center px-3 py-1 bg-orange-500 text-white rounded hover:bg-orange-600 transition-colors">
+                <i class="fas fa-external-link-alt mr-2"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- Services / What I Offer Section -->
+  <section id="services" class="py-20 bg-gray-900 text-white relative overflow-hidden">
+
+    <div class="absolute inset-0 overflow-hidden opacity-20">
+      <div class="absolute top-10 left-10 w-40 h-40 rounded-full bg-blue-500 blur-3xl"></div>
+      <div class="absolute bottom-20 right-20 w-60 h-60 rounded-full bg-purple-500 blur-3xl"></div>
+      <div class="absolute top-1/2 left-1/3 w-40 h-40 rounded-full bg-teal-500 blur-3xl"></div>
+    </div>
+
+    <div class="container mx-auto px-6 relative z-10">
+      <h2 class="text-3xl font-bold text-center mb-4">What I Offer</h2>
+      <p class="text-gray-300 text-center max-w-2xl mx-auto mb-16">Delivering high-quality web solutions tailored to
+        your specific needs. Let's bring your vision to life with modern technologies and beautiful designs.</p>
+
+      <!-- Services Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Service 1: Frontend Development -->
+        <div
+          class="group bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:bg-gradient-to-br hover:from-gray-800 hover:to-gray-700 relative">
+          <div class="h-32 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+            <div class="relative w-20 h-20">
+              <div
+                class="absolute inset-0 bg-blue-500 rounded-full opacity-20 group-hover:opacity-30 group-hover:scale-110 transition-all duration-500">
+              </div>
+              <div
+                class="absolute inset-2 bg-blue-500 rounded-full opacity-40 group-hover:opacity-50 group-hover:scale-110 transition-all duration-500 delay-75">
+              </div>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <i
+                  class="fas fa-laptop-code text-4xl text-blue-400 group-hover:text-blue-300 transition-colors duration-300"></i>
+              </div>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-3 text-blue-400 group-hover:text-blue-300 transition-colors duration-300">
+              Frontend Development</h3>
+            <p class="text-gray-300 mb-6">Creating responsive, interactive, and high-performance user interfaces using
+              modern frameworks and best practices. Your website will look great on any device.</p>
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span class="px-2 py-1 bg-gray-700 text-blue-300 text-xs rounded-full">React.js</span>
+              <span class="px-2 py-1 bg-gray-700 text-blue-300 text-xs rounded-full">Tailwind CSS</span>
+              <span class="px-2 py-1 bg-gray-700 text-blue-300 text-xs rounded-full">JavaScript</span>
+            </div>
+            <div class="flex items-center text-blue-400 group-hover:text-blue-300 transition-all duration-300">
+              <span class="mr-2">Learn more</span>
+              <i class="fas fa-arrow-right transform group-hover:translate-x-2 transition-transform duration-300"></i>
+            </div>
+          </div>
+          <div
+            class="absolute -bottom-6 -right-6 w-12 h-12 bg-blue-500 opacity-20 rounded-full group-hover:scale-150 group-hover:-translate-x-2 group-hover:translate-y-2 group-hover:opacity-30 transition-all duration-500">
+          </div>
+        </div>
+
+        <!-- Service 2: Landing Page creation -->
+        <div
+          class="group bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:bg-gradient-to-br hover:from-gray-800 hover:to-gray-700 relative">
+          <div class="h-32 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+            <div class="relative w-20 h-20">
+              <div
+                class="absolute inset-0 bg-purple-500 rounded-full opacity-20 group-hover:opacity-30 group-hover:scale-110 transition-all duration-500">
+              </div>
+              <div
+                class="absolute inset-2 bg-purple-500 rounded-full opacity-40 group-hover:opacity-50 group-hover:scale-110 transition-all duration-500 delay-75">
+              </div>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <i
+                  class="fas fa-paint-brush text-4xl text-purple-400 group-hover:text-purple-300 transition-colors duration-300"></i>
+              </div>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3
+              class="text-xl font-bold mb-3 text-purple-400 group-hover:text-purple-300 transition-colors duration-300">
+              Landing Page Creation</h3>
+            <p class="text-gray-300 mb-6">Designing and developing eye-catching landing pages optimized for conversion.
+              Capture visitor attention and turn them into customers with compelling page designs.</p>
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span class="px-2 py-1 bg-gray-700 text-purple-300 text-xs rounded-full">UI/UX Design</span>
+              <span class="px-2 py-1 bg-gray-700 text-purple-300 text-xs rounded-full">CRO</span>
+              <span class="px-2 py-1 bg-gray-700 text-purple-300 text-xs rounded-full">HTML/CSS</span>
+            </div>
+            <div class="flex items-center text-purple-400 group-hover:text-purple-300 transition-all duration-300">
+              <span class="mr-2">Learn more</span>
+              <i class="fas fa-arrow-right transform group-hover:translate-x-2 transition-transform duration-300"></i>
+            </div>
+          </div>
+          <div
+            class="absolute -bottom-6 -right-6 w-12 h-12 bg-purple-500 opacity-20 rounded-full group-hover:scale-150 group-hover:-translate-x-2 group-hover:translate-y-2 group-hover:opacity-30 transition-all duration-500">
+          </div>
+        </div>
+
+        <!-- Service 3: Backend Development -->
+        <div
+          class="group bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:bg-gradient-to-br hover:from-gray-800 hover:to-gray-700 relative">
+          <div class="h-32 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+            <div class="relative w-20 h-20">
+              <div
+                class="absolute inset-0 bg-teal-500 rounded-full opacity-20 group-hover:opacity-30 group-hover:scale-110 transition-all duration-500">
+              </div>
+              <div
+                class="absolute inset-2 bg-teal-500 rounded-full opacity-40 group-hover:opacity-50 group-hover:scale-110 transition-all duration-500 delay-75">
+              </div>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <i
+                  class="fas fa-server text-4xl text-teal-400 group-hover:text-teal-300 transition-colors duration-300"></i>
+              </div>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-3 text-teal-400 group-hover:text-teal-300 transition-colors duration-300">
+              Backend Development</h3>
+            <p class="text-gray-300 mb-6">Building robust, scalable server-side solutions that power modern
+              applications. Expert implementation of APIs, databases, and cloud infrastructure.</p>
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span class="px-2 py-1 bg-gray-700 text-teal-300 text-xs rounded-full">API Development</span>
+              <span class="px-2 py-1 bg-gray-700 text-teal-300 text-xs rounded-full">Database Design</span>
+              <span class="px-2 py-1 bg-gray-700 text-teal-300 text-xs rounded-full">Cloud Services</span>
+            </div>
+            <div class="flex items-center text-teal-400 group-hover:text-teal-300 transition-all duration-300">
+              <span class="mr-2">Learn more</span>
+              <i class="fas fa-arrow-right transform group-hover:translate-x-2 transition-transform duration-300"></i>
+            </div>
+          </div>
+          <div
+            class="absolute -bottom-6 -right-6 w-12 h-12 bg-teal-500 opacity-20 rounded-full group-hover:scale-150 group-hover:-translate-x-2 group-hover:translate-y-2 group-hover:opacity-30 transition-all duration-500">
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-16">
+        <a href="#contact"
+          class="inline-block px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-lg hover:from-blue-600 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50">
+          Get a Free Consultation
+        </a>
+      </div>
+      <div class="hidden lg:block">
+        <div class="absolute top-20 left-10 text-gray-700 opacity-20 text-6xl animate-pulse"
+          style="animation-duration: 5s;">&lt;/&gt;</div>
+        <div class="absolute bottom-20 right-10 text-gray-700 opacity-20 text-5xl animate-pulse"
+          style="animation-duration: 7s;">&lt;/&gt;</div>
+        <div class="absolute top-40 right-20 grid grid-cols-3 gap-2">
+          <div class="w-2 h-2 rounded-full bg-gray-700 opacity-20"></div>
+          <div class="w-2 h-2 rounded-full bg-gray-700 opacity-20"></div>
+          <div class="w-2 h-2 rounded-full bg-gray-700 opacity-20"></div>
+          <div class="w-2 h-2 rounded-full bg-gray-700 opacity-20"></div>
+          <div class="w-2 h-2 rounded-full bg-gray-700 opacity-20"></div>
+          <div class="w-2 h-2 rounded-full bg-gray-700 opacity-20"></div>
+          <div class="w-2 h-2 rounded-full bg-gray-700 opacity-20"></div>
+          <div class="w-2 h-2 rounded-full bg-gray-700 opacity-20"></div>
+          <div class="w-2 h-2 rounded-full bg-gray-700 opacity-20"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-20 bg-gray-900 text-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">What My Clients Say</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Testimonial 1 -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div class="flex justify-end mb-4">
+            <i class="fas fa-quote-right text-blue-400 opacity-50 text-2xl"></i>
+          </div>
+          <p class="text-gray-300 mb-6">Their frontend development skills transformed our outdated website into a modern
+            masterpiece. The attention to detail and responsiveness exceeded our expectations.</p>
+          <div class="flex mb-4 text-yellow-400">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="flex items-center">
+            <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center mr-3">
+              <span class="font-bold text-lg">SJ</span>
+            </div>
+            <div>
+              <h4 class="font-semibold">Sarah Johnson</h4>
+              <p class="text-sm text-gray-400">Marketing Director, TechNova</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div class="flex justify-end mb-4">
+            <i class="fas fa-quote-right text-purple-400 opacity-50 text-2xl"></i>
+          </div>
+          <p class="text-gray-300 mb-6">The landing page they created for our product launch drove conversion rates up
+            by 40%. Clean code, fast loading times, and beautiful design all in one package.</p>
+          <br>
+          <div class="flex mb-4 text-yellow-400">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <div class="flex items-center">
+            <div class="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center mr-3">
+              <span class="font-bold text-lg">MP</span>
+            </div>
+            <div>
+              <h4 class="font-semibold">Michael Park</h4>
+              <p class="text-sm text-gray-400">Founder, Startup Ventures</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div class="flex justify-end mb-4">
+            <i class="fas fa-quote-right text-green-400 opacity-50 text-2xl"></i>
+          </div>
+          <p class="text-gray-300 mb-6">The website redesign completely transformed our online presence. Our bounce rate
+            decreased while session duration doubled. A true professional who delivers on time.</p>
+          <div class="flex mb-4 text-yellow-400">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="flex items-center">
+            <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center mr-3">
+              <span class="font-bold text-lg">ER</span>
+            </div>
+            <div>
+              <h4 class="font-semibold">Emma Rodriguez</h4>
+              <p class="text-sm text-gray-400">CEO, GreenLife Organics</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 4 -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div class="flex justify-end mb-4">
+            <i class="fas fa-quote-right text-amber-400 opacity-50 text-2xl"></i>
+          </div>
+          <p class="text-gray-300 mb-6">Working with them was a breeze. They took my vague ideas and turned them into a
+            stunning portfolio website that perfectly represents my brand and attracts new clients.</p>
+          <div class="flex mb-4 text-yellow-400">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="flex items-center">
+            <div class="w-10 h-10 bg-amber-500 rounded-full flex items-center justify-center mr-3">
+              <span class="font-bold text-lg">DT</span>
+            </div>
+            <div>
+              <h4 class="font-semibold">David Thompson</h4>
+              <p class="text-sm text-gray-400">Photographer, Visual Stories</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="flex flex-wrap justify-center gap-12 mt-16">
+        <div class="text-center">
+          <p class="text-4xl font-bold text-blue-400">20+</p>
+          <p class="text-gray-400">Happy Clients</p>
+        </div>
+        <div class="text-center">
+          <p class="text-4xl font-bold text-purple-400">50+</p>
+          <p class="text-gray-400">Projects Completed</p>
+        </div>
+        <div class="text-center">
+          <p class="text-4xl font-bold text-green-400">100%</p>
+          <p class="text-gray-400">Satisfaction Rate</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-gray-900 text-white bg-cover bg-center"
+    style="background-image: url('./assets/Skill-Background-DyW-3xK-.jpg');">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">Contact Me</h2>
+      <div class="max-w-lg mx-auto bg-gray-800 rounded-xl shadow-lg overflow-hidden p-8">
+        <form id="contactForm">
+          <div class="mb-6">
+            <label for="name" class="block text-gray-300 font-medium mb-2">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required class="w-full bg-gray-700 text-white px-4 py-3 rounded-lg 
+                    focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300">
+          </div>
+          <div class="mb-6">
+            <label for="email" class="block text-gray-300 font-medium mb-2">Email</label>
+            <input type="email" id="email" name="email" placeholder="your.email@example.com" required class="w-full bg-gray-700 text-white px-4 py-3 rounded-lg 
+                   focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300">
+          </div>
+          <div class="mb-8">
+            <label for="message" class="block text-gray-300 font-medium mb-2">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required class="w-full bg-gray-700 text-white px-4 py-3 rounded-lg 
+                    focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300"></textarea>
+          </div>
+          <button id="submitBtn" type="submit" class="w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white font-bold py-3 px-6 rounded-lg 
+                 hover:from-blue-600 hover:to-purple-700 transition-all duration-300 transform hover:-translate-y-1 
+                   focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50">
+            <span id="btnText">Send Message</span>
+            <span id="btnSpinner" class="hidden">Loading...</span>
+          </button>
+        </form>
+      </div>
+      <div
+        class="flex flex-col md:ml-10 md:flex-row justify-center items-center mt-12 space-y-6 md:space-y-0 md:space-x-12">
+        <div class="flex items-center">
+          <div class="w-12 h-12 rounded-full bg-blue-500 flex items-center justify-center mr-4 shadow-lg">
+            <i class="fas fa-envelope text-white text-xl"></i>
+          </div>
+          <div>
+            <h3 class="font-medium text-lg">Email</h3>
+            <p class="text-gray-400">devendhra@example.com</p>
+          </div>
+        </div>
+        <div class="flex items-center">
+          <div class="w-12 h-12 rounded-full bg-purple-500 flex items-center justify-center mr-4 shadow-lg">
+            <i class="fas fa-map-marker-alt text-white text-xl"></i>
+          </div>
+          <div class="flex mr-10 flex-col">
+            <h3 class="font-medium text-lg">Location</h3>
+            <p class="text-gray-400">TamilNadu, Chennai</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- A wave message after filling details  -->
+    <div id="thankYouOverlay"
+      class="fixed inset-0 bg-gray-900 bg-opacity-95 flex flex-col justify-center items-center z-50 opacity-0 pointer-events-none transition-opacity duration-500">
+      <h2 class="text-4xl font-bold text-white animate-wave">Thank you! 🙌</h2>
+      <p class="text-gray-300 mt-4 text-lg">Your message has been received.</p>
+    </div>
+  </section>
+
+
+  <!-- Footer Section -->
+  <footer class="bg-gray-900 text-white py-10">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between items-center mb-8">
+        <div class="mb-6 md:mb-0">
+          <h3 class="text-2xl font-bold mb-2">Devendhra A</h3>
+          <p class="text-gray-400">Full Stack Developer</p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-4 md:gap-8">
+          <a href="#hero" class="text-gray-300 hover:text-blue-400 transition-colors">Home</a>
+          <a href="#about" class="text-gray-300 hover:text-blue-400 transition-colors">About</a>
+          <a href="#skills" class="text-gray-300 hover:text-blue-400 transition-colors">Skills</a>
+          <a href="#projects" class="text-gray-300 hover:text-blue-400 transition-colors">Projects</a>
+          <a href="#contact" class="text-gray-300 hover:text-blue-400 transition-colors">Contact</a>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-800 my-6"></div>
+
+      <div class="flex flex-col items-center justify-center">
+        <div class="flex items-center justify-center mb-6">
+          <a href="mailto:devendhraalthur@gmail.com" class="text-gray-400 hover:text-red-500 transition-colors mx-2"
+            aria-label="Email">
+            <i class="fas fa-envelope text-xl"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/devendhra-a-2946182a4/"
+            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-600 transition-colors duration-300 mx-2">
+            <i class="fab fa-linkedin-in text-white"></i>
+          </a>
+          <a href="https://github.com/devendhra"
+            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-800 transition-colors duration-300 mx-2">
+            <i class="fab fa-github text-white"></i>
+          </a>
+          <a href="https://www.instagram.com/devv_zyk/"
+            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-red-600 transition-colors duration-300 mx-2">
+            <i class="fab fa-instagram text-white"></i>
+          </a>
+          <a href="https://twitter.com/devendhra37984"
+            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-400 transition-colors duration-300 mx-2">
+            <i class="fab fa-twitter text-white"></i>
+          </a>
+        </div>
+        <div class="text-gray-400 text-sm text-center">
+          &copy; 2025 Devendhra A — All Rights Reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script>
+    const header = document.getElementById('header');
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+    const navLinks = document.querySelectorAll('.nav-link');
+    const mobileLinks = document.querySelectorAll('.nav-link-mobile');
+
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 10 && window.innerWidth >= 768) {
+        header.classList.add('bg-black', 'bg-opacity-40', 'shadow-md');
+        header.classList.remove('bg-transparent');
+
+        navLinks.forEach(link => {
+          link.classList.remove('text-white');
+          link.classList.add('text-blue-900');
+        });
+      } else {
+        header.classList.remove('bg-black', 'bg-opacity-40', 'shadow-md');
+        header.classList.add('bg-transparent');
+
+        navLinks.forEach(link => {
+          link.classList.remove('text-blue-900');
+          link.classList.add('text-white');
+        });
+      }
+    });
+
+
+    menuToggle.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+      menu.classList.toggle('block');
+      menu.classList.toggle('animate-slide');
+    });
+
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        menu.classList.add('hidden');
+        menu.classList.remove('block');
+      });
+    });
+  </script>
+
+
+
+</body>
+
+</html>
